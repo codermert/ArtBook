@@ -33,6 +33,8 @@ public class ArtAdapter extends RecyclerView.Adapter<ArtAdapter.ArtHolder> {
     @Override
     public void onBindViewHolder(@NonNull ArtAdapter.ArtHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.binding.recyclerViewTextView.setText(artArrayList.get(position).name); // VERİLERİN İSMİNİ SADECE AL
+         // bu kısımdan verilerin resimlerini ana ekranda gösterebiliriz 
+        // daha iyi görünmüş olacaktır
         holder.itemView.setOnClickListener(new View.OnClickListener() { // TIKLANAN VERİNİN HANGİSİ OLDUĞUNU GETİRİR
             @Override
             public void onClick(View view) {
